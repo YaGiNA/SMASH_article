@@ -33,6 +33,7 @@
 \def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
 \def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
 \def\|{\verb|}
+\def\newblock{\hskip .11em plus .33em minus .07em}
 %
 
 %\setcounter{巻数}{59}%vol59=2018
@@ -75,7 +76,7 @@ UEC, Chofu, Tokyo 182--8585, Japan}
 
 \maketitle
 
-%\input{chapters/introduction}
+\input{chapters/introduction}
 %\input{chapters/related_reseaches}
 %\input{chapters/purpose}
 %\input{chapters/methology}
@@ -86,7 +87,6 @@ UEC, Chofu, Tokyo 182--8585, Japan}
 %謝辞
 %\input{chapters/thanks}
 
-%\input{chapters/reference}
-%\bibliographystyle{junsrt}
-%\bibliography{reference}
+\bibliographystyle{junsrt}
+\bibliography{reference}
 \end{document}
