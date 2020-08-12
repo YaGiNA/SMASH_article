@@ -1,0 +1,95 @@
+%%
+%% 研究報告用スイッチ
+%% [techrep]
+%%
+%% 欧文表記無しのスイッチ(etitle,eabstractは任意)
+%% [noauthor]
+%%
+
+%\documentclass[submit,techrep]{ipsj}
+\documentclass[submit,techrep,noauthor]{ipsj}
+
+\usepackage{latexsym}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{nidanfloat}
+\usepackage{afterpage}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{here}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+%\usepackage{graphicx}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\usepackage{ascmac}
+%\bibliographystyle{unsrt}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
+\def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
+\def\|{\verb|}
+\def\newblock{\hskip .11em plus .33em minus .07em}
+%
+
+%\setcounter{巻数}{59}%vol59=2018
+%\setcounter{号数}{10}
+%\setcounter{page}{1}
+
+
+\begin{document}
+
+
+\title{記事コメント生成によるフェイクニュースの早期検出}
+
+\affiliate{UEC}{電気通信大学\\
+UEC, Chofu, Tokyo 182--8585, Japan}
+
+\author{柳 裕太}{Yuta Yanagi}{UEC}[yanagi.yuta@ohsuga.lab.uec.ac.jp]
+\author{折原 良平}{Ryouhei Orihara}{UEC}[orihara@acm.org]
+\author{清 雄一}{Yuichi Sei}{UEC}[seiuny@uec.ac.jp]
+\author{田原 康之}{Yasuyuki Tahara}{UEC}[ohsuga@uec.ac.jp]
+\author{大須賀 昭彦}{Akihiko Ohsuga}{UEC}[tahara@uec.ac.jp]
+
+\input{chapters/abstract}
+
+%
+%\begin{jkeyword}
+%情報処理学会論文誌ジャーナル，\LaTeX，スタイルファイル，べからず集
+%\end{jkeyword}
+%
+%\begin{eabstract}
+%This document is a guide to prepare a draft for submitting to IPSJ
+%Journal, and the final camera-ready manuscript of a paper to appear in
+%IPSJ Journal, using {\LaTeX} and special style files.  Since this
+%document itself is produced with the style files, it will help you to
+%refer its source file which is distributed with the style files.
+%\end{eabstract}
+%
+%\begin{ekeyword}
+%IPSJ Journal, \LaTeX, style files, ``Dos and Dont's'' list
+%\end{ekeyword}
+
+\maketitle
+
+\input{chapters/introduction}
+\input{chapters/related_works}
+%\input{chapters/purpose}
+\input{chapters/methodology}
+\input{chapters/experiment}
+\input{chapters/discussion}
+\input{chapters/conclusion}
+
+%謝辞
+\input{chapters/thanks}
+
+%付録
+\input{chapters/appendix.tex}
+
+\bibliographystyle{junsrt}
+\bibliography{reference}
+\end{document}
