@@ -1,4 +1,12 @@
 \section{実験}
+\subsection{実験環境}
+今回の提案モデルの実装や実験の実施は、以下の環境で行った。
+\begin{itemize}
+    \item TITAN X (Pascal)を搭載したLinuxマシン上のDockerで構築したUbuntu16.04環境で実験を行った。
+    \item GitHub上で公開されていたGroverモデルをForkして実装を行った。
+    \item モデルサイズはGrover-Baseを採用し、今回実験で使用する語彙サイズに合わせて調整を行った。
+\end{itemize}
+
 \subsection{単語生成の傾向}
 \label{subsec:trend}
 まずはじめに、正しいニュースとフェイクニュースの記事とコメントのセットから生成されたコメントの傾向を調べた。
